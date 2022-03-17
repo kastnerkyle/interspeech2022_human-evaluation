@@ -102,16 +102,20 @@ def main():
             true_so_far += 1
             entry["style"] = "display: block;"
             entry["title"] = "Question {}".format(true_so_far)
+            entry["required"] = "required"
+            entry["checked"] = ""
         else:
             entry["style"] = "display: none;"
             entry["title"] = "hidden"
+            entry["required"] = ""
+            entry["checked"] = "checked"
         entry["audio_path"] = _f
         entry["name"] = "q" + str(_n)
         questions_list.append(entry)
 
     html = template.render(
         page_title="LISTENING TEST",
-        form_url="https://script.google.com/macros/s/AKfycbyJLPpkQMvCPb2KBa9tGaEdNtwJzCLROA27GEUbgEHO2HRKeDoOTlnJkrSQin3LfK2qsQ/exec",
+        form_url="https://script.google.com/macros/s/AKfycbxQtiFJzEGvHH7s2or_qNeNnAs29lZ4t2w0NRL-g8dTthEOuH8zfZjYr7X03lpT2aRMkA/exec",
         form_id=1,
         questions=questions_list,
     )
