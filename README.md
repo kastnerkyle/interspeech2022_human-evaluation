@@ -3,6 +3,13 @@
 This online form template functions like [Google Forms](https://www.google.com/forms/about/) but is more customizable.
 Please feel free to use this as a template to create your own online human evaluation form.
 
+helpful regex
+grep --color='auto' -P -n "[^\x00-\x7F]" templates/*
+
+script.google.com
+
+sheets.google.com
+
 ### Usage
 
 1. On GitHub:
