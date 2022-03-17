@@ -1,33 +1,42 @@
 {% extends "base.html.jinja2" %}
 {% block heading %}
-    <h1 class="display-4">MOS TEST</h1>
+    <h1 class="display-4">LISTENING TEST</h1>
     <hr class="my-4">
     <p>
         Welcome, and thank you for participating in this listening test.
         <p>
-
-        To evalute the following audio samples, please use these rough guidelines:
+        <br>
+        <br>
+        INSTRUCTIONS:
         <p>
-        Try to rank sounds based on the delivery rate, and style rather than on audio quality alone.
+        Try to rank sounds based on the delivery rate, and style rather than on audio quality.
         <p>
         For example, something that sounds like a baseball announcer but with static (e.g. interference over a car radio) should be considered in the 4 or 5 (natural delivery) categories. If the audio quality is so bad it interferes with your listening, it can be ok to score lower however.
         <p>
-        A clearly computer/robotic voice with perfect, crystal clear, audio quality should be considered more in the 3, 2, or 1 categories - unless the timing and style feels "natural" to you (then it can be scored higher)
+        A clearly voice with unnatural delivery but perfect, crystal clear audio quality should be considered more in the 3, 2, or 1 categories - unless the timing and style feels "natural" to you (then it can be scored higher).
+        <br>
+        <br>
+        <br>
         <p>
+        Rate each example as independently as possible, some of the sentences may be duplicates but try to rate separately without doing direct "head-to-head" comparison.
         <p>
-        Rate each example as independently as possible, some of the sentences may be duplicates but try to rate separately without directly comparing.
-        <p>
-        There will be a total of 21 questions.
+        There will be a total of 21 questions - scroll down to see the audio player, and begin.
         <p>
         Thank you again for participating!
     </p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <p>
+        Rating system for this test, and approximate description of the score for each value
         <ul>
             <li>5 (Natural delivery)</li>
             <li>4 (Somewhat natural)</li>
-            <li>3 (Acceptable)</li>
-            <li>2 (Slightly unnatural)</li>
-            <li>1 (Unnatural)</li>
+            <li>3 (Acceptable/Neutral)</li>
+            <li>2 (Somewhat unnatural)</li>
+            <li>1 (Very unnatural)</li>
         </ul>
     </p>
 {% endblock %}
@@ -51,15 +60,15 @@
                 </div>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="{{ question.name }}" id="{{ question.name }}_3" value="3" required>
-                    <label class="form-check-label" for="{{ question.name }}_3">3 (Acceptable)</label>
+                    <label class="form-check-label" for="{{ question.name }}_3">3 (Acceptable/Neutral)</label>
                 </div>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="{{ question.name }}" id="{{ question.name }}_4" value="2" required>
-                    <label class="form-check-label" for="{{ question.name }}_4">2 (Slightly unnatural)</label>
+                    <label class="form-check-label" for="{{ question.name }}_4">2 (Somewhat unnatural)</label>
                 </div>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="{{ question.name }}" id="{{ question.name }}_5" value="1" required>
-                    <label class="form-check-label" for="{{ question.name }}_5">1 (Unnatural)</label>
+                    <label class="form-check-label" for="{{ question.name }}_5">1 (Very unnatural)</label>
                 </div>
             </div>
         </div>
