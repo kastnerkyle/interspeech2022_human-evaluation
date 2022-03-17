@@ -87,7 +87,7 @@ def main():
     ]
     """
     # use file_sets to determine what to hide and what to show
-    selected_file_set = file_sets[0]
+    selected_file_set = file_sets[4]
 
     # file set 0 is webpage 1
     all_selected_files = {}
